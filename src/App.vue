@@ -5,9 +5,11 @@ import { RouterLink, RouterView } from 'vue-router'
 <template>
   <!-- 一级路由出口组件 -->
   <router-view></router-view>
+  
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+
 header {
   line-height: 1.5;
   max-height: 100vh;
