@@ -1,4 +1,5 @@
 <script setup>
+
 import { useCategoryStore } from '@/stores/category.js';
 const categoryStore = useCategoryStore()
 </script>
@@ -9,9 +10,13 @@ const categoryStore = useCategoryStore()
       <h1 class="logo">
         <RouterLink to="/">小兔鲜</RouterLink>
       </h1>
+
       <ul class="app-header-nav">
+        <li class="home">
+          <router-link to="/">首页</router-link>
+        </li>
         <li class="home" v-for="item in categoryStore.categoryList" :key="item.id">
-          <RouterLink to="/">{{ item.name }}</RouterLink>
+          <RouterLink :to="`/category/${item.id}`">{{ item.name }}</RouterLink>
         </li>
       </ul>
       <div class="search">
