@@ -20,6 +20,7 @@ onMounted(() => categoryStore.getCategory())
   <LayoutNav />
   <LayoutHeader />
   <!-- 添加key 破坏复用机制 强制销毁重建 -->
+  <!-- 但是会重复发送banner请求,浪费资源 -->
   <!-- <RouterView :key="$route.fullPath" /> -->
   <RouterView />
   <LayoutFooter />
