@@ -10,8 +10,8 @@ const userStore=useUserStore()
 
 //1.准备表单对象
 const form = ref({
-  account: '12056258291',
-  password: 'hm#qd@23!',
+  account: '13012345683',
+  password: '123456',
   agree:true
 })
 
